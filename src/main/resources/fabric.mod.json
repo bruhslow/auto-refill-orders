@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "autofillorders",
+  "version": "2.4.9+26.x",
+  "name": "Auto Refill Orders",
+  "description": "Automatically refills order items from player inventory.",
+  "authors": [
+    "slowbag"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/autofillorders/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.autofillorders.AutofillOrdersMod"
+    ],
+    "client": [
+      "com.example.autofillorders.client.AutofillOrdersClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "configScreenFactory": "com.example.autofillorders.client.AutofillConfigScreen::create"
+    }
+  }
+}
