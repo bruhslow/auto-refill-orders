@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "autofillorders",
+  "version": "2.4.9+26.x",
+  "name": "Autofill Orders",
+  "description": "Fast 1-key order auto-filler for SMP servers.",
+  "authors": [
+    "slowbag"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/autofillorders/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.autofillorders.AutofillOrdersMod"
+    ],
+    "client": [
+      "com.example.autofillorders.client.AutofillOrdersClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "configScreenFactory": "com.example.autofillorders.client.AutofillConfigScreen::create"
+    }
+  }
+}
